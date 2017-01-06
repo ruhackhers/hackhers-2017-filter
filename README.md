@@ -1,6 +1,6 @@
 HackHERS
 
-Check out HackHERS(http://ruhackhers.github.io/), an all women hackathon in Rutgers University, NJ.
+Check out HackHERS(http://hackhers.us), an all women hackathon in Rutgers University, NJ.
 
 This project is forked from AlexEKoren/Technify.
 

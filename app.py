@@ -19,11 +19,11 @@ def process_image(img):
 
   #make sure our image has alpha channel
   img = img.convert('RGBA')
-  
+
   #unique name
   filename = uuid.uuid4().hex + '.png'
   filename = os.path.join('/tmp', filename)
-  img.save(filename, 'PNG')
+  Image.alpha_composite(img, mask).save(filename, 'PNG')
   #send it back
   return filename
 
@@ -60,7 +60,7 @@ def classify_upload():
   #process the image
   resultFilename = process_image(image)
   #send it back
-  return send_file(resultFilename, mimetype='image/png', as_attachment=True, attachment_filename='spectrafy.png')
+  return send_file(resultFilename, mimetype='image/png', as_attachment=True, attachment_filename='hackhersify.png')
 
 if __name__ == '__main__':
   port = int(os.environ.get("PORT", 5000))

@@ -31,11 +31,6 @@ def process_image(img):
 def index():
     return render_template('index.html')
 
-
-@app.route('/')
-def index():
-    return render_template('index.html')
-
 @app.route('/hackhers-2017-filter', methods=['POST'])
 def classify_upload():
   try:
